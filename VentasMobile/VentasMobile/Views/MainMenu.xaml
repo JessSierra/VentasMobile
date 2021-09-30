@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="VentasMobile.Views.MainMenu">
+        <StackLayout Spacing="0" >
+            <StackLayout Orientation="Vertical" BackgroundColor="White"   TranslationY="10">
+                <Label Text="Agregar Venta" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" XAlign="Center" VerticalOptions="Center" Margin="5,0,0,0"  TextColor="#685296" FontSize="22">
+                </Label>
+
+            </StackLayout>
+            <StackLayout Margin="0,20,0,20" Spacing="10">
+                <Entry x:Name="name" Placeholder="Nombre cliente">
+                </Entry>
+                <Entry x:Name="tipoPago" Placeholder="Tipo de pago">
+                </Entry>
+                <Entry x:Name="direccion" Placeholder="Direccion">
+                </Entry>
+            </StackLayout>
+        <ScrollView>
+
+            <ListView x:Name="listaProductos" ItemSelected="listaProductos_ItemSelected" Margin="0,40,0,0" HasUnevenRows="True"  CachingStrategy = "RecycleElement">
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <ViewCell>
+
+                                <StackLayout Orientation="Vertical"  Margin="20,0,20,20" >
+                                    <StackLayout BackgroundColor="White">
+                                        <StackLayout Orientation="Vertical" BackgroundColor="White" >
+                                            <Label Text="{Binding nombre}" VerticalTextAlignment="Center" XAlign="Center" VerticalOptions="Center" Margin="5,0,0,0"  TextColor="Black" FontSize="22">
+
+                                            </Label>
+                                            <Label Text="Seleccionar" VerticalTextAlignment="Center" XAlign="Center" VerticalOptions="Center" Margin="5,0,0,0"  TextColor="Black" FontSize="15">
+
+                                            </Label>
+                                        </StackLayout>
+
+
+
+                                    </StackLayout>
+
+
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+
+
+                </ListView>
+
+    </ScrollView>
+
+    <Button HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Blue" HeightRequest="40" WidthRequest="100" Clicked="Button_Clicked" TextColor="White" Text="Comprar"></Button>
+
+
+
+            </StackLayout>
+
+</ContentPage>

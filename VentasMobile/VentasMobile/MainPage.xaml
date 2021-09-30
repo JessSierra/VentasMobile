@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="VentasMobile.MainPage">
+
+    <ScrollView>
+        <StackLayout >
+            <StackLayout Orientation="Vertical" BackgroundColor="White"   TranslationY="10">
+                <Label Text="Productos" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" XAlign="Center" VerticalOptions="Center" Margin="5,0,0,0"  TextColor="#685296" FontSize="22">
+                </Label>
+
+            </StackLayout>
+            <ListView x:Name="listC" HasUnevenRows="True" IsVisible="False" CachingStrategy = "RecycleElement">
+                <ListView.ItemTemplate >
+                    <DataTemplate >
+                        <ViewCell>
+
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="20,0,20,0" >
+                                <StackLayout BackgroundColor="Black">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="White"   TranslationY="10">
+                                        <Label Text="gg" VerticalTextAlignment="Center" XAlign="Center" VerticalOptions="Center" Margin="5,0,0,0"  TextColor="#685296" FontSize="22">
+                                        </Label>
+
+                                    </StackLayout>
+                                 
+
+
+                                </StackLayout>
+
+
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+
+
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VentasMobile.Views.DetalleProducto">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="labelProducto" Margin="0,30,0,0" FontSize="18" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Button HorizontalOptions="Center" Margin="0,30,0,0" BackgroundColor="Blue" HeightRequest="40" WidthRequest="100" Clicked="Button_Clicked" TextColor="White" Text="Comprar"></Button>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
