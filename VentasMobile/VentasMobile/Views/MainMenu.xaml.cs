@@ -138,26 +138,10 @@ namespace VentasMobile.Views
                     //Deserealiza los datos que devuelve la api al modelo que se necesite
                     FormatterService Formatter = new FormatterService();
                     var ApiTokenObject = await Formatter.viewData(Api.Result);
-                    if (Formatter.Status)
-                    {
-                        if (ApiTokenObject)
-                        {
-                            try
-                            {
-                                await DisplayAlert("", "Los datos se han guardado correctamente", "Aceptar");
-                            }
-                            catch (Exception er)
-                            {
-
-                            }
-                        }
-
-                    }
-                    else
-                    {
+                  
                         this.IsBusy = false;
-                        await DisplayAlert("Error", "Ocurrio un error, intentalo más tarde.", "Aceptar");
-                    }
+                        await DisplayAlert("", "Cambios guardados", "Aceptar");
+                    
                 }
                 else
                 {
